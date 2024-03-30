@@ -1,19 +1,18 @@
-# SA0 [Cameronkeith.me](http://cameronkeith.me) Setup
-[deployed url](http://cameronkeith.me)
-
+# My ROI on College [Cameronkeith.me](http://cameronkeith.me)
 *description*
-I adhered to all SA0 guidelines, and I connected my gh-pages website repository to my personal domain, [cameronkeith.me](http://cameronkeith.me).
+I met all Lab 1, Part 1 guidelines, and have created the basic structure for a startup idea, `My ROI on College`.
+
+`My ROI on College` is a platform designed to help students make informed decisions about their educational journey and career prospects. Leveraging artificial intelligence, our platform provides personalized insights to quantify the value of attending college versus exploring alternative paths. Whether you're assessing rankings, exploring career opportunities, or evaluating pricing options, `My ROI on College` equips you with the tools to unlock your full potential.
+
+[Visit My ROI on College](http://cameronkeith.me)
 
 ## What Worked Well
-- 1: created basic website structure with [index.html](./cameronkeith.me/index.html) and set `main` branch to `gh-pages`
-- 2: reserved student domain name on namecheap
-- 3: added [CNAME file](./cameronkeith.me/CNAME)
+
+- I based my structure on Stripe's general layout, and have designed the higher level modules for each section of `My ROI on College`. 
 
 ## What Didn't
-- 1: Nothing according to SA0 specs
+
+- Nothing yet, because I have not implemented CSS.
 
 ## Extra Credit
-- 1: added cool gif
-
-## Screenshots
-![Screenshot](./cameronkeith.me/images/screenshot.png)
+- TBD with CSS, I am preparing to use word changing, typewriter effect, and more. 
