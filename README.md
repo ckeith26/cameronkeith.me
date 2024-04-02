@@ -16,3 +16,8 @@ I met all Lab 1, Part 1 guidelines, and have created the basic structure for a s
 
 ## Extra Credit
 - TBD with CSS, I am preparing to use word changing, typewriter effect, and more. 
+
+## Sources
+
+- [google fonts docs](https://developers.google.com/fonts/docs)
+- [font awesome docs](https://docs.fontawesome.com/web)
