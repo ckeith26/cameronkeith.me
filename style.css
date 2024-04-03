@@ -1,3 +1,7 @@
+@media only screen and (max-width: 640px) {
+
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -53,6 +57,145 @@ body {
     color: black;
     font-weight: bold;
 }
+.navbar nav ul li a:hover {
+    color: rgba(0, 50, 175, 0.348);
+}
+.gradient-text {
+    background-image: linear-gradient(to right, #ff0000, #fc9343);
+    background-clip: text;
+    color: transparent;
+  }
+
+.cols-dir {
+    margin-top: 10%;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.cen {
+    margin-left: 30%;
+    font-size: 30px;
+}
+
+.basic-rankings {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.in-roi-qa {
+    padding: 8px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-button {
+    padding: 10px 20px;
+    background-color: #003386;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+.unis {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.unis li {
+    margin-bottom: 5px;
+}
+
+.unis li a {
+    text-decoration: none;
+    color: #003386;
+    transition: color 0.3s;
+}
+
+.unis li a:hover {
+    color: #0056b3;
+}
+
+.cen-button {
+    margin-top: 2%;
+    margin-left: 30%;
+    font-size: 20px;
+    border-width: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 110, 255);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.move {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.cen-button:hover {
+    color:#003386;
+}
+
+.cen-button:hover .move {
+    transform: translateX(5px);
+}
+
+.in-roi {
+    margin-top: 10%;
+    justify-content: space-around;
+    position: absolute;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 80%;
+    height: 125px;
+    border-radius: 30px;
+    background-color: rgb(42, 149, 255);
+}
+
+.in-roi-img {
+    background-image: url("./images/roioncollege.png");
+
+}
+
+.in-roi-text {
+    font-size:30px;
+}
+
+.in-roi-qa {
+    margin-right: 5%;
+    align-items: center;
+    border-radius: 50px;
+    width: 40%;
+    height: 65px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
 
 .contact-button,
 .signin-button {
@@ -70,18 +213,129 @@ body {
 
 .contact-button:hover,
 .signin-button:hover {
-    background-color: #0056b3;
+    background-color: #003386;
 }
 .signup-button {
-    background-color: #297bff;
+    background-color: #003386;
+    color: white;
+}
+.signup-button:hover {
+    background-color: #5797ff;
+    color: white;
 }
 
 .quantify-text {
+    margin-left: 17%;
     font-weight: bold;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
+.typewriter-1 {
+    display: inline-block;
+    opacity: 0;
+    animation: typewriter 2s steps(20) 1s forwards, delete-typewriter 2s steps(20) 4s backwards;
+}
+
+.trust {
+    margin-top: 10%;
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.trust-text {
+    font-size: 20px;
+    margin-bottom: 20%;
+    display:flex;
+}
+
+.trust-logos {
+    
+    margin-right:1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trust i {
+    margin-left:90%;
+    transform: scale(500%);
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes delete-typewriter {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.typewriter:not(:first-child) {
+    display: none;
+}
+
+.phone {
+    position: absolute;
+    
+    width: 275px;
+    height: 525px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    border: 4px solid #ccc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-image: url("./images/roioncollege.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: -14%;
+  }
+
+  .data {
+    width: 225%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.1);
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-image: url("./images/fun.png");
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    top: -15%;
+    right: -20%;
+
+  }
+
 .call-to-action {
-    font-size: 70px;
+    font-size: 75px;
+}
+
+.section-title {
+    font-size: 60px;
 }
 
 .logo-text {
@@ -89,13 +343,18 @@ body {
     font-weight:bolder;
 }
 
+.logo-text:hover {
+    color:#0056b3;
+}
+
 .gradient-container {
     flex: 1;
     position: relative;
-    background-image: url('./images/background.png');
+    background-image: url("./images/background.png");
     background-size: cover;
     background-position: center;
     z-index: 0;
+    margin-bottom: 1%;
 }
 
 .white-background {
@@ -112,13 +371,20 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30%; /* Adjust as needed */
+    height: 30%;
     background-color: white;
     z-index: -1;
 }
+
 .cols-container {
     display: flex;
     padding: 0% 5% 5% 20%;
+}
+
+.rankings {
+    width: 150px;
+    height: 80px;
+    border-radius: 40px;
 }
 
 .col {
