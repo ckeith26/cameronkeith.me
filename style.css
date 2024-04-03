@@ -1,5 +1,5 @@
 @media only screen and (max-width: 640px) {
-    nav.mobile { display: flex;float: right;
+    div.tab { display: flex;float: right;
         position: relative;
         border-radius: 30px; 
         overflow: hidden;}
@@ -18,7 +18,7 @@
     input.in-roi-qa {font-size: 10px;}
 }
 @media (width > 640px) {
-    nav.mobile {display:none}
+    div.tab {display:none}
 }
 
 .tab {
@@ -253,7 +253,7 @@ body {
 }
 
 .basic-rankings {
-    
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
