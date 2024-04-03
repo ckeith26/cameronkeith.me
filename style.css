@@ -1,6 +1,83 @@
 @media only screen and (max-width: 640px) {
-
+    nav.mobile { display: flex;}
+    nav.desktop { display: none;}
 }
+
+.mobile {
+    float: left;
+    position: relative;
+  }
+  .mobile label {
+    background: linear-gradient(#eee, #ccc);
+    padding: 10px 30px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    position: relative;
+  }
+  .mobile label i {
+    font-style: normal;
+    font-size: 10px;
+    color: #aaa;
+    position: absolute;
+    right: 18px;
+    top: 12px;
+  }
+  .mobile [type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    z-index: 1;
+  }
+  .content {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    left: 0;
+    background: #333;
+    color: white;
+    padding: 20px;
+  }
+  .content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .content a {
+    color: white;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+    padding: 5px;
+  }
+  [type="radio"]:checked ~ label {
+    z-index: 2;
+  }
+  [type="radio"]:checked ~ label ~ .content {
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .close-tab {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .close-tab label {
+    background: #333;
+    color: white;
+  }
+  [type="radio"]:checked ~ label ~ .close-tab {
+    z-index: 3;
+  }
 
 body {
     margin: 0;
@@ -13,7 +90,7 @@ body {
     background-size: cover;
 }
 
-.navbar {
+.navbar-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,27 +114,27 @@ body {
     margin-right: 10px;
 }
 
-.navbar a {
+.navbar-desktop a {
     text-decoration: none;
     color: black;
     margin-right: 20px;
 }
 
-.navbar nav ul {
+.navbar-desktop nav ul {
     list-style: none;
     display: flex;
 }
 
-.navbar nav ul li {
+.navbar-desktop nav ul li {
     margin-right: 10px;
 }
 
-.navbar nav ul li a {
+.navbar-desktop nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.navbar nav ul li a:hover {
+.navbar-desktop nav ul li a:hover {
     color: rgba(0, 50, 175, 0.348);
 }
 .gradient-text {
