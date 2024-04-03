@@ -1,6 +1,14 @@
 @media only screen and (max-width: 640px) {
     nav.mobile { display: flex;}
-    nav.desktop { display: none;}
+    div.navbar-desktop { display: none;}
+    div.cols-container {display:flex}
+    div.trust {display: none}
+    div.data {display: none}
+    div.phone {display:none}
+    div.img {display: none;}
+}
+@media {
+    nav.mobile {display:none}
 }
 
 .mobile {
