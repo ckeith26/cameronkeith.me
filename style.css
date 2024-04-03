@@ -1,8 +1,4 @@
 @media only screen and (max-width: 640px) {
-    div.tab { display: flex;float: right;
-        position: relative;
-        border-radius: 30px; 
-        overflow: hidden;}
     div.navbar-desktop { display: none;}
     div.trust {display: none}
     div.data {display: none}
@@ -58,7 +54,7 @@
     left: 0;
     background: #333;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
   }
   .content ul {
     margin: 0;
