@@ -2,9 +2,9 @@
     div.navbar-desktop { display: none;}
     div.trust {display: none}
     div.data {display: none}
-    div.phone {display:none}
+    div.phone {margin-top: 300px; width:100px;height: 200px; background-size: 50%; align-items: center;}
     div.img {display: none;}
-    h2.quantify-text {text-wrap: wrap;}
+    h2.quantify-text {margin-top: 0; text-wrap: wrap;}
     div {text-wrap: wrap; max-width: 640px;}
     img {display: none}
     h1.section-title {font-size: 30px;}
@@ -12,55 +12,73 @@
     div.content {max-width: 640px;}
     p.in-roi-text {margin-left:5%; font-size: 20px;}
     input.in-roi-qa {font-size: 10px;}
+    h2.gradient-text {margin-left: -10px; text-wrap: nowrap; font-size: 25px;}
+    button.cen-button {margin-left: 0;}
+    input.in-roi-qa {width: 135px}
+    div.basic-rankings {width: 325px; transform:translateX(-42px); font-size: 15px;}
 }
 @media (width > 640px) {
     div.tab {display:none}
+    div.content {max-width: none;}
 }
 
 .tab {
     float: left;
     position: relative;
   }
+  
   .tab label {
-    background: linear-gradient(#eee, #ccc);
+    width: 20px;
+    height: 40px;
+    background: rgb(0, 110, 255);
     padding: 10px 30px;
     cursor: pointer;
     text-align: center;
     display: block;
     position: relative;
+    border-radius: 20px;
   }
+  
   .tab label i {
+    align-items: center;
+    justify-self: center;
     font-style: normal;
-    font-size: 10px;
-    color: #aaa;
+    font-size: 45px;
+    color: #ffffff;
     position: absolute;
     right: 18px;
     top: 12px;
   }
+  
   .tab [type="radio"] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 200%;
     height: 100%;
     opacity: 0;
     margin: 0;
     z-index: 1;
   }
+  
   .content {
     position: absolute;
     top: 100%;
     opacity: 0;
     left: 0;
-    background: #333;
+    background: #97c7ff;
     color: white;
-    /* padding: 20px; */
+    padding: 20px;
   }
+  
   .content ul {
+    width: 130px;
     margin: 0;
     padding: 0;
     list-style: none;
+    border-radius: 5px;
   }
+  
   .content a {
     color: white;
     display: block;
@@ -69,9 +87,11 @@
     border-bottom: 1px solid #999;
     padding: 5px;
   }
+  
   [type="radio"]:checked ~ label {
     z-index: 2;
   }
+  
   [type="radio"]:checked ~ label ~ .content {
     z-index: 1;
     opacity: 1;
@@ -85,93 +105,16 @@
     width: 100%;
     height: 100%;
   }
+  
   .close-tab label {
-    background: #333;
+    background: #498fff;
     color: white;
   }
+  
   [type="radio"]:checked ~ label ~ .close-tab {
     z-index: 3;
   }
-
-.mobile {
-    float: left;
-    position: relative;
-  }
-  .mobile label {
-    background: linear-gradient(#eee, #ccc);
-    padding: 10px 30px;
-    cursor: pointer;
-    text-align: center;
-    display: block;
-    position: relative;
-  }
-  .mobile label i {
-    font-style: normal;
-    font-size: 10px;
-    color: #aaa;
-    position: absolute;
-    right: 18px;
-    top: 12px;
-  }
-  .mobile [type="radio"] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    margin: 0;
-    z-index: 1;
-  }
-  .content {
-    position: absolute;
-    top: 100%;
-    opacity: 0;
-    left: 0;
-    background: #333;
-    color: white;
-  }
-  .content img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-  .content ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .content a {
-    color: white;
-    display: block;
-    white-space: nowrap;
-    text-decoration: none;
-    border-bottom: 1px solid #999;
-
-  }
-  [type="radio"]:checked ~ label {
-    z-index: 2;
-  }
-  [type="radio"]:checked ~ label ~ .content {
-    z-index: 1;
-    opacity: 1;
-  }
   
-  .close-mobile {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .close-mobile label {
-    background: #333;
-    color: white;
-  }
-  [type="radio"]:checked ~ label ~ .close-mobile {
-    z-index: 3;
-  }
 
 body {
     margin: 0;
@@ -182,6 +125,7 @@ body {
 .cover {
     background-color:white;
     background-size: cover;
+    overflow: hidden;
 }
 
 .navbar-desktop {
@@ -249,11 +193,15 @@ body {
 }
 
 .basic-rankings {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
     margin-bottom: 20px;
+    width: 50%;
+    align-items: center;
 }
 
 .section-title {
@@ -431,11 +379,12 @@ body {
 }
 
 .trust-logos {
-    
+    display: flex;
     margin-right:1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 }
 
 .trust i {
